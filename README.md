@@ -1,6 +1,6 @@
 # meet-app
 
-meet-app[#]
+[meet-app](https://mikkobelly.github.io/meet/#)
 
 ## Description
 meet-app allows users to search for a city and get a list of events hosted in that city (or events in all cities). One chart shows how many events will take place in that city on upcoming days and another visualizes the popularity of event genres in the form of a pie chart.
