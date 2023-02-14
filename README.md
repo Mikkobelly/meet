@@ -5,6 +5,7 @@
 ## Description
 meet-app allows users to search for a city and get a list of events hosted in that city (or events in all cities). One chart shows how many events will take place in that city on upcoming days and another visualizes the popularity of event genres in the form of a pie chart.
 
+Serverless functions are used for the authorization server which generates authorization token needed in order to access the Google Calendar API to get events data. 
 
 ## Key features
 
