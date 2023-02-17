@@ -90,6 +90,7 @@ describe('<App /> integration', () => {
         NumberOfEventsWrapper.find('.number').simulate('change', { target: { value: 10 } });
         const allEvents = await getEvents();
         const eventsToShow = allEvents.slice(0, 10);
+        expect(AppWrapper.find('.event').hostNodes()).toHaveLength(10);
         expect(AppWrapper.state('events')).toEqual(eventsToShow);
         AppWrapper.unmount();
     })
