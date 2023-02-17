@@ -78,7 +78,7 @@ describe('<App /> integration', () => {
     test('change App state when number input changes', () => {
         const AppWrapper = mount(<App />);
         const NumberOfEventsWrapper = AppWrapper.find(NumberOfEvents);
-        NumberOfEventsWrapper.find('number').simulate('change', { target: { value: 12 } });
+        NumberOfEventsWrapper.find('.number').simulate('change', { target: { value: 12 } });
         expect(AppWrapper.state('numberOfEvents')).toBe(12);
         AppWrapper.unmount();
     });
