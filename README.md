@@ -65,6 +65,7 @@ User story: As a user, I should be able to show/hide event details so that I can
 #### Scenario 3: User can collapse an event to hide its details
 
 - **Given** the main page is open with the list of upcoming events in all cities or specified city
+- **And** user has clicked "show details" button and details of event are shown
 - **When** user clicks "hide details" button for the associated event from the list
 - **Then** user should see less details of the event associated with the clicked button
 
@@ -74,15 +75,15 @@ User story: As a user, I should be able to specify the number of events I want t
 
 #### Scenario 1: When user hasn’t specified a number, 32 is the default number
 
-- **Given** app is loaded
+- **Given** user hasn’t specified a number
 - **When** user receives the list of events in all cities or specified city
 - **Then** user should see the list of 32 upcoming events in all cities or specified city
 
 #### Scenario 2: User can change the number of events they want to see
 
 - **Given** the main page is open with the list of events in all cities or specified city
-- **When** user hasn’t specified a number of events to be shown by choosing the number in input (32 or 64 or 96)
-- **Then** user receives first 32/64/96 upcoming events on the screen – according to the chosen number
+- **When** user specifies number of events to display
+- **Then** user receives specified number of events on the screen
 
 ### FEATURE 4: USE THE APP WHEN OFFLINE
 
