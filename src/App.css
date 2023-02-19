@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 body {
   background-color: rgb(241, 246, 251);
+  color: rgb(61, 61, 61);
 }
 
 .App {
@@ -11,6 +12,11 @@ body {
 .App * {
   box-sizing: border-box;
   letter-spacing: 1px;
+}
+
+h1 {
+  margin: 26px 0 10px;
+  text-shadow: 4px 4px #558abb5c;
 }
 
 ul {
@@ -25,6 +31,7 @@ p {
 .display-none {
   display: none;
 }
+
 .showSuggestions {
   display: block;
 }
@@ -39,6 +46,9 @@ input[type="number"] {
   line-height: 20px;
   align-self: center;
   height: 38px;
+}
+
+input[type="text"] {
   margin-bottom: 1rem;
 }
 
@@ -66,7 +76,7 @@ input:focus {
   z-index: 2;
   align-self: center;
   margin: 0;
-  top: 43px;
+  top: 95px;
   font-size: 14px;
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
@@ -84,7 +94,7 @@ input:focus {
 }
 
 .suggestions > li:hover {
-  background-color: #bcdcdb;
+  background-color:#b4c7e3;
 }
 
 .EventList {
@@ -102,6 +112,14 @@ input:focus {
   border-radius: 4px;
   box-shadow: 3px 3px 15px rgb(167, 167, 167);
   position: relative;
+}
+
+.event .summary {
+  text-shadow: 2px 2px #558abb5c;
+}
+
+.event .location {
+  margin-bottom: 2rem;
 }
 
 .toggleButton {
@@ -161,8 +179,11 @@ input:focus {
 }
 
 .Alert {
-  position: fixed;
-  top: 20px;
+  height: 50px;
+}
+
+.Alert p {
+  font-size: 14px;
 }
 
 .data-vis-wrapper {
@@ -231,6 +252,9 @@ input:focus {
 }
 
 @media only screen and (min-width: 576px) {
+  h1 {
+    font-size: 40px;
+  }
   .EventList {
     width: 80%;
   }
