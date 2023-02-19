@@ -25,7 +25,7 @@ class Event extends Component {
                 {this.state.collapsed === false && (
                     <>
                         <h3 className="about">About</h3>
-                        <a href={event.htmlLink} className="link">See details on Google Calender</a>
+                        <a href={event.htmlLink} target="_blank" rel="noreferrer" className="link">See details on Google Calender</a>
                         <p className='description'>{event.description}</p>
                     </>
                 )
