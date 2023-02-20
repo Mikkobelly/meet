@@ -101,7 +101,7 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2.25rem;
-  margin: 2.5rem auto;
+  margin: 1.2rem auto 2rem;
 }
 
 .event {
