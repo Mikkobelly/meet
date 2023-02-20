@@ -3,8 +3,7 @@ import { ErrorAlert } from "./Alert";
 
 class NumberOfEvents extends Component {
     state = {
-        number: 32,
-        showErrorMessage: undefined
+        number: 32
     }
 
     handleNumberChanged = (event) => {
