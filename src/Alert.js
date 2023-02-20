@@ -44,7 +44,7 @@ class WarningAlert extends Alert {
     getStyle = () => {
         return {
             color: this.color,
-            fontSize: '14px'
+            fontSize: '16px'
         };
     }
 }
