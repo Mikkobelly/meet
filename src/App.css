@@ -6,7 +6,7 @@ body {
 
 .App {
   text-align: center;
-  padding: 2% 0;
+  padding: 2% 8%;
 }
 
 .App * {
@@ -190,7 +190,6 @@ input:focus {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 70px;
 }
 .data-vis-wrapper .recharts-responsive-container {
   min-width: 100%;
