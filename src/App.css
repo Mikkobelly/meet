@@ -164,12 +164,6 @@ input:focus {
   overflow-x: hidden;
 }
 
-/* .numberOfEvents {
-  max-width: 200px;
-  margin: 20px auto;
-  text-align: center;
-} */
-
 .NumberOfEvents {
   margin-left: 2rem;
   margin-right: 2rem;
