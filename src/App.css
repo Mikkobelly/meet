@@ -6,7 +6,6 @@ body {
 
 .App {
   text-align: center;
-  padding: 2% 8%;
 }
 
 .App * {
@@ -102,6 +101,7 @@ input:focus {
   grid-template-columns: 1fr;
   grid-gap: 2.25rem;
   margin: 1.2rem auto 2rem;
+  padding: 0 1rem;
 }
 
 .event {
@@ -164,10 +164,15 @@ input:focus {
   overflow-x: hidden;
 }
 
-.numberOfEvents {
+/* .numberOfEvents {
   max-width: 200px;
   margin: 20px auto;
   text-align: center;
+} */
+
+.NumberOfEvents {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .button-wrapper {
@@ -190,11 +195,14 @@ input:focus {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 2%;
 }
+
 .data-vis-wrapper .recharts-responsive-container {
   min-width: 100%;
   display: flex;
 }
+
 .recharts-surface {
   overflow: visible;
 }
@@ -228,4 +236,8 @@ input:focus {
     min-width: auto;
     margin: 0 auto;
   }
+
+  .recharts-responsive-container:first-child {
+    margin-right: -12rem;
+  }  
 }
