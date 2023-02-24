@@ -8,7 +8,7 @@ class CitySearch extends Component {
         showSuggestions: undefined
     };
 
-    invalidStyle = { border: '1px solid orangered' };
+    invalidStyle = { border: `1px solid orangered` };
 
     handleInputChanged = (event) => {
         const value = event.target.value;
