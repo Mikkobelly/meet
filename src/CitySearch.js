@@ -8,8 +8,6 @@ class CitySearch extends Component {
         showSuggestions: undefined
     };
 
-    invalidStyle = { border: `1px solid orangered` };
-
     handleInputChanged = (event) => {
         const value = event.target.value;
         const suggestions = this.props.locations.filter(location => location.toUpperCase().indexOf(value.toUpperCase()) > -1);
@@ -47,7 +45,7 @@ class CitySearch extends Component {
                     placeholder="Search for a city"
                     onChange={this.handleInputChanged}
                     onFocus={() => this.setState({ showSuggestions: true })}
-                    style={this.state.infoText && this.state.infoText.length > 0 ? this.invalidStyle : ''}
+                    style={this.state.infoText && this.state.infoText.length > 0 ? { border: '1px solid rgb(255, 69, 0)' } : ''}
                 />
 
                 <ul className="suggestions" style={this.state.showSuggestions ? {} : { display: 'none' }}>
