@@ -45,7 +45,6 @@ class CitySearch extends Component {
                     placeholder="Search for a city"
                     onChange={this.handleInputChanged}
                     onFocus={() => this.setState({ showSuggestions: true })}
-                    style={this.state.infoText && this.state.infoText.length > 0 ? { border: '1px solid rgb(255, 69, 0)' } : ''}
                 />
 
                 <ul className="suggestions" style={this.state.showSuggestions ? {} : { display: 'none' }}>
