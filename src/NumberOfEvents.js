@@ -29,6 +29,7 @@ class NumberOfEvents extends Component {
                     className="number"
                     value={this.state.number}
                     onChange={this.handleNumberChanged}
+                    style={this.state.errorText && this.state.errorText.length > 0 ? { borderColor: 'red' } : {}}
                 />
                 <ErrorAlert text={this.state.errorText} />
             </div>
