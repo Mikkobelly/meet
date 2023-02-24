@@ -52,7 +52,7 @@ input[type="text"] {
 }
 
 input:focus {
-  border: 1px solid rgb(255, 128, 0);
+  border: 1px solid #558ae0;
   outline: none;
 }
 
