@@ -108,3 +108,8 @@ User story: As a user, I should be able to see a chart showing the upcoming even
 - **Given** user receives the list of events in specified city which user has set
 - **When** user pushes the button "Visualize"
 - **Then** user should see a chart with the number of upcoming events in the specified city
+
+## App showcase
+
+<img alt="A screenshot of Meet App welcome page" src="/public/meet-app_welcome.png" width="100%">
+<img alt="A screenshot of Meet App main page" src="/public/meet-app_main.png" width="100%">
